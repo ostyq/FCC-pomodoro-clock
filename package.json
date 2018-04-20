@@ -1,0 +1,28 @@
+{
+  "name": "pomodoro-clock",
+  "version": "1.0.0",
+  "description": "Pomodoro clock - free code camp project",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ostyq/FCC-pomodoro-clock.git"
+  },
+  "keywords": [],
+  "author": "Veronika Tolpeeva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ostyq/FCC-pomodoro-clock/issues"
+  },
+  "homepage": "https://github.com/ostyq/FCC-pomodoro-clock#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
