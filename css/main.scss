@@ -1,3 +1,62 @@
-body{
-    
+body {
+  // background-color: rgb(91, 214, 163);
+  background-image: url(https://images.unsplash.com/photo-1524593166156-312f362cada0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e10ec798513cda942abceac3e0be9d54&auto=format&fit=crop&w=1050&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+h1 {
+  text-align: center;
+  font: italic bold 4em Georgia, serif;
+}
+.duration-regulation-area {
+  margin: 0 auto;
+  width: 26em;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2em;
+}
+div header {
+  font-size: 1em;
+}
+.duration-regulation-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0.5em auto;
+}
+.duration-regulation-buttons button {
+  flex-basis: 1.4em;
+}
+
+.countdown-screen {
+  margin: 0.5em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.countdown-screen p {
+  margin: 0 0;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.timer-regulation-area {
+  width: 24em;
+  margin: 4em auto;
+  display: flex;
+  justify-content: space-between;
+}
+.timer-regulation-area button {
+  flex-basis: 6em;
+  height: 3em;
+}
+i {
+  margin: 0.5em;
+}
+.hidden {
+  display: none;
 }

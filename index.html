@@ -8,9 +8,46 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.scss">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
 </head>
+<h1>Pomodoro Timer</h1>
 
 <body>
+  <div class="duration-regulation-area">
+    <div class="break-regulation">
+      <header>Break length</header>
+      <div class="duration-regulation-buttons">
+        <button>-</button>
+        <span>5</span>
+        <button>+</button>
+      </div>
+    </div>
+    <div class="session-regulation">
+      <header>Session length</header>
+      <div class="duration-regulation-buttons">
+        <button>-</button>
+        <span>25</span>
+        <button>+</button>
+      </div>
+    </div>
+  </div>
+  <div class="countdown-screen">
+    Time left:
+    <!-- Session in progress / Break in progress -->
+    <p>25:00</p>
+  </div>
+  <div class="timer-regulation-area">
+    <button class="reset-button">
+      <i class="fas fa-sync-alt"></i>Reset</button>
+    <button class="pause-button">
+      <i class="fas fa-pause"></i>Pause</button>
+    <button class="start-stop-button">
+      <i class="fas fa-play"></i>Start</button>
+    <button class="start-stop-button hidden">
+      <i class="fas fa-stop"></i>Stop</button>
+  </div>
+
 
   <script src="js/script.js"></script>
 </body>
