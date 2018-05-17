@@ -1,15 +1,13 @@
 import $ from 'jquery';
 
 let sessionLengthMinutes = Number($('p.duration-length').text());
-let breakLengthMunutes = Number($('p.break-length').text());
+let breakLengthMinutes = Number($('p.break-length').text());
 
 let currentMinutes = sessionLengthMinutes;
 let currentSeconds = '00';
 let breakInProgress = false;
 
 const updateTimer = () => {
-  //   const currentTime = $('.countdown-time').text();
-  //   console.log(currentTime);
   const currentTime = `${currentMinutes}:${currentSeconds}`;
   $('p.countdown-time').html(currentTime);
 };
@@ -32,7 +30,7 @@ const countdown = () => {
   if (currentMinutes < 0) {
     if (breakInProgress === false) {
       breakInProgress = true;
-      currentMinutes = breakLengthMunutes - 1;
+      currentMinutes = breakLengthMinutes - 1;
       $('p.countdown-title').text('Break!');
     } else if (breakInProgress === true) {
       breakInProgress = false;
@@ -63,7 +61,6 @@ const pauseTimer = () => {
 const resetTimer = () => {
   clearInterval(timerId);
   currentMinutes = sessionLengthMinutes;
-  // think if i need to create half-reset during break adjustment
   currentSeconds = '00';
   updateTimer();
   breakInProgress = false;
@@ -75,7 +72,7 @@ const resetTimer = () => {
 
 const resetBreak = () => {
   clearInterval(timerId);
-  currentMinutes = breakLengthMunutes;
+  currentMinutes = breakLengthMinutes;
   currentSeconds = '00';
   updateTimer();
   if ($('button.start-button').hasClass('hidden')) {
@@ -92,9 +89,9 @@ const updateSession = () => {
 };
 
 const updateBreak = () => {
-  $('p.break-length').text(breakLengthMunutes);
+  $('p.break-length').text(breakLengthMinutes);
   if (breakInProgress) {
-    currentMinutes = breakLengthMunutes;
+    currentMinutes = breakLengthMinutes;
     updateTimer();
   }
 };
@@ -120,7 +117,7 @@ const increaseBreakLength = () => {
   if (currentSeconds !== '00' && breakInProgress) {
     resetBreak();
   }
-  breakLengthMunutes += 1;
+  breakLengthMinutes += 1;
   updateBreak();
 };
 
@@ -128,8 +125,8 @@ const decreaseBreakLength = () => {
   if (currentSeconds !== '00' && breakInProgress) {
     resetBreak();
   }
-  if (breakLengthMunutes > 1) {
-    breakLengthMunutes -= 1;
+  if (breakLengthMinutes > 1) {
+    breakLengthMinutes -= 1;
   }
   updateBreak();
 };

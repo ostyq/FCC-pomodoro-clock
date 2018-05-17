@@ -1,9 +1,9 @@
 body {
-  background-image: url(https://source.unsplash.com/nM6qrtnVKn8/1920x1080);
+  background-image: url('../img/tom-hermans.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  font: normal regular 1em Georgia, serif;
+  font: normal 1em Georgia, serif;
 }
 h1 {
   text-align: center;
@@ -84,7 +84,7 @@ button:focus {
   font-size: 1.2em;
   font-weight: bold;
 }
-.timer-regulation-area i {
+.timer-regulation-area svg {
   margin-right: 0.8em;
 }
 .hidden {
