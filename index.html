@@ -18,34 +18,35 @@
     <div class="break-regulation">
       <header>Break length</header>
       <div class="duration-regulation-buttons">
-        <button>-</button>
-        <span>5</span>
-        <button>+</button>
+        <button class="break-minus">-</button>
+        <p class="break-length">5</p>
+        <button class="break-plus">+</button>
       </div>
     </div>
     <div class="session-regulation">
       <header>Session length</header>
       <div class="duration-regulation-buttons">
-        <button>-</button>
-        <span>25</span>
-        <button>+</button>
+        <button class="session-minus">-</button>
+        <p class="duration-length">25</p>
+        <button class="session-plus">+</i>
+        </button>
       </div>
     </div>
   </div>
   <div class="countdown-screen">
-    Time left:
+    <p class="countdown-title">Session:</p>
     <!-- Session in progress / Break in progress -->
-    <p>25:00</p>
+    <p class="countdown-time">25:00</p>
   </div>
   <div class="timer-regulation-area">
     <button class="reset-button">
       <i class="fas fa-sync-alt"></i>Reset</button>
-    <button class="pause-button">
+    <button class="pause-button hidden">
       <i class="fas fa-pause"></i>Pause</button>
-    <button class="start-stop-button">
+    <button class="start-button">
       <i class="fas fa-play"></i>Start</button>
-    <button class="start-stop-button hidden">
-      <i class="fas fa-stop"></i>Stop</button>
+    <!-- <button class="stop-button hidden">
+      <i class="fas fa-stop"></i>Stop</button> -->
   </div>
 
 
