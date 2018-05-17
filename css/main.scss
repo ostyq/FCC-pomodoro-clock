@@ -1,3 +1,92 @@
-body{
-    
+body {
+  background-image: url('../img/tom-hermans.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font: normal 1em Georgia, serif;
+}
+h1 {
+  text-align: center;
+  font: italic bold 4em Georgia, serif;
+}
+.duration-regulation-area {
+  margin: 1em auto 0 auto;
+  width: 18em;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3em;
+}
+div header {
+  font-size: 1em;
+  font-weight: lighter;
+}
+.duration-regulation-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0.3em auto 0 auto;
+}
+.duration-regulation-buttons button {
+  flex-basis: 1.4em;
+  padding: 0em;
+}
+button.session-plus,
+button.break-plus {
+  padding-bottom: 0.1em;
+}
+button {
+  border-radius: 12px;
+  border: 1px solid grey;
+}
+button:hover {
+  cursor: pointer;
+  background: rgb(255, 143, 123);
+}
+button:focus {
+  outline: none;
+}
+
+.duration-regulation-buttons p {
+  margin: 0 0;
+  padding: 0.1em;
+  font-size: 1em;
+}
+
+.countdown-screen {
+  margin: 0.5em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4.6em;
+}
+
+.countdown-title {
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 0;
+  font-size: 1em;
+}
+
+.countdown-screen p {
+  margin: 0 0;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.timer-regulation-area {
+  width: 28em;
+  margin: 4em auto;
+  display: flex;
+  justify-content: space-between;
+}
+.timer-regulation-area button {
+  flex-basis: 10em;
+  height: 3.2em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.timer-regulation-area svg {
+  margin-right: 0.8em;
+}
+.hidden {
+  display: none;
 }
