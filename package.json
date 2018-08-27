@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Pomodoro clock - free code camp project",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": "parcel index.html --out-dir docs",
+    "build": "parcel build index.html --out-dir docs --public-url ./"
   },
   "repository": {
     "type": "git",
